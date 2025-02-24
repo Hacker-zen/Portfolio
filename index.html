@@ -13,8 +13,8 @@
             color: #333;
         }
         header {
-            background: #007bff;
-            color: white;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #333;
             padding: 1rem 0;
             text-align: center;
         }
@@ -22,7 +22,7 @@
             margin: 0;
         }
         nav {
-            background: #333;
+            background: #FF8C00;
             color: white;
             text-align: center;
             padding: 0.5rem 0;
@@ -31,43 +31,56 @@
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            text-decoration: underline;
+            color: #FFD700;
         }
         section {
             padding: 2rem;
             max-width: 800px;
             margin: auto;
+            background-color: #FFF8DC;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
         .section-title {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid #007bff;
+            border-bottom: 2px solid #FFD700;
             display: inline-block;
+            color: #FF8C00;
         }
         .skills-list, .projects-list {
             list-style: none;
             padding: 0;
         }
         .skills-list li, .projects-list li {
-            background: #f4f4f4;
+            background: white;
             margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
+            border-left: 3px solid #FFD700;
+            transition: transform 0.2s ease;
+        }
+        .skills-list li:hover, .projects-list li:hover {
+            transform: translateX(5px);
+            background: #FFF8DC;
         }
         footer {
             text-align: center;
             padding: 1rem 0;
-            background: #f4f4f4;
-            border-top: 1px solid #ddd;
+            background: linear-gradient(to right, #FFD700, #FFA500);
+            color: #333;
+            border-top: 1px solid #FF8C00;
         }
         footer a {
-            color: #007bff;
+            color: #FF8C00;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         footer a:hover {
-            text-decoration: underline;
+            color: #FFD700;
         }
     </style>
 </head>
@@ -107,8 +120,8 @@
                 <p>A system designed to streamline scheduling and manage appointments efficiently for businesses and individuals.</p>
             </li>
             <li>
-                <strong>DomBooking-Hotel booking site </strong> - <a href="https://github.com/Hacker-zen/DomBooking">GitHub Repository</a>
-                <p>A hotel booking website. </p>
+                <strong>DomBooking-Hotel booking site</strong> - <a href="https://github.com/Hacker-zen/DomBooking">GitHub Repository</a>
+                <p>A hotel booking website.</p>
             </li>
             <li>
                 <strong>iMarket - E-commerce Site</strong> - <a href="https://github.com/Hacker-zen/web-labs">GitHub Repository</a>
@@ -123,7 +136,7 @@
 
     <section id="contact">
         <h2 class="section-title">Contact Me</h2>
-        <p>If you’d like to get in touch, feel free to reach out!</p>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
         <p>Email: <a href="mailto:336123@niuitmo.ru">336123@niuitmo.ru</a></p>
         <p>GitHub: <a href="https://github.com/Hacker-zen" target="_blank">github.com/Hacker-zen</a></p>
     </section>
